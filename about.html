@@ -3,56 +3,109 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="icon" href="images/Yash_website_pic.jpg">
-        <link rel="stylesheet" href="css/style.css">
         <script src="https://kit.fontawesome.com/376c1020b5.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
         <title>About Me</title>
     </head>
     
     <body>
         <header>
-            <div class="skip"><a href="about.html">Skip to Main Content</a></div>
-            <img src="images/Yash_website_pic.jpg" alt="Yash Potdukhe Portrait" id="logo">
+            <div class="skip"><a tabindex="1"  href="#main-about">Skip to Main Content</a></div>
+            <!-- <img src="images/Yash_website_pic.jpg" alt="Yash Potdukhe Portrait" id="logo"> -->
             <!-- Nav is a sematic tag page that aids accessibility -->
-            <nav class="nav_links" aria-label="navigating through pages">
-                <ul>
-                    <li class="nav_item"><a href = "index.html" >Home</a></li>
-                    <li class="nav_item"><a href = "about.html">About Me</a></li>
-                    <li class="nav_item"><a href = "experience.html">Experience</a></li>
-                    <!-- <li class="nav_item"><a href = "https://www.youtube.com/watch?v=eBGIQ7ZuuiU">Coolest Video EVER</a></li> -->
+            <!-- <nav>
+                <ul class="nav_links">
+                    <li class="nav_item"><a href = "about.html" >About</a></li>
+                    <li class="nav_item"><a href = "experience.html">Portfolio</a></li>
+                    <li class="nav_item"><a href = "blog.html">Blog</a></li>
                 </ul>
-            </nav>
+            </nav> -->
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a tabindex="2" class="underline nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a tabindex="3" class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a tabindex="4" class="nav-link" href="experience.html">Experience</a>
+                </li>
+            </ul>
         </header>
-
         <main>
-            <h1>About Me</h1>
-             <p id="bio">I am a student at University of Michigan's College of Engineering. 
-                I am pursuing a B.S.E. in Computer Science with a minor in Math and UX Design! 
-                Below are some pictures of me travelling and having fun</p>
-                <div class="about_gallery">
-                    <img id="about_item1" src="images/bball_venice.png" width="200" alt="Basketball at Venice Beach">
-                    <img id="about_item2" src="images/hs_bball.jpg" width="200" alt="Basketball in High School">
-                    <img id="about_item3" src="images/friends.png" width="200" alt="Some friendsc">
-                    <img id="about_item4" src="images/fam_arizona.png" width="200" alt="Arizona trip with family">
-                    <img id="about_item5" src="images/spring_break.png" width="200" alt="Spring Break with friends">
-                    <img id="about_item6" src="images/senior_hs_bball.png" width="200" alt="Senior Game High School Basketball">
-                    <img id="about_item7" src="images/seattle_neil.png" width="200" alt="Visiting my brother in Seattle">
-                    <img id="about_item8" src="images/ktp_pic.png" width="200" alt="Some college friends"> 
-                    <img id="about_item9" src="images/sb_friends.png" width="200" alt="Some more friends">
+            <div class="sidebar">
+
+                <div class="container container-fluid">
+
+                    <div class="container-fluid side-info">
+                        <img class="profile-pic" src="images/Yash_website_pic.jpg" alt="Yash Potdukhe" width="80">
+
+                        <div class="profile-info container-fluid">
+                            <div class="row">
+                                <h1 class="name">Yash Potdukhe</h1>
+                            </div>
+                            <div class="row">
+                                <p class="position">Software Engineer</p>
+                            </div>
+                            
+                            <div class="row socials-row">
+                                <nav class="social col-6 col-sm-4">
+                                    <a href="https://www.instagram.com/yashpotdukhe/" aria-label="instagram icon" class="icon fa-brands fa-instagram fa-ex"></a>
+                                </nav>
+                                <nav class="social col-6 col-sm-4">
+                                    <a href="https://www.linkedin.com/in/yash-potdukhe/" aria-label="linkedin icon" class="icon fa-brands fa-linkedin-in"></a>
+                                </nav>
+                                <nav class="social col-6 col-sm-4">
+                                    <a href="https://github.com/YashPotdukhe" aria-label="github icon" class="icon fa-brands fa-github"></a>
+                                </nav>
+                            </div>
+
+                        </div>
+                    
+                    </div>
                 </div>
+
+            </div>
+
+            <div class="main-content" id="main-about">
+                <header class="title">
+                    <h2 class="title-name">About me</h2>
+                </header>
+                <div class="about-me">
+                    <p class="about-me-text">
+                        Hi! My name is Yash. I am student at the University of Michigan studying Computer Science. I am really interested in building software that is applicable to people's lives.
+                    </p>
+                    <p class="about-me-text">
+                        Outside of the classroom, you can always catch me playing basketball, working out, or reading! Here's some pictures of me with some people in my life.
+                    </p>
+                </div>
+
+                <div class="about-pics scroll d-flex flex-row bd-highlight mb-3">
+                    <img tabindex="8" class="scroll-pic scroll-pic1 p-2 bd-highlight" src="images/fam_arizona.png" alt="With the family in Arizona">
+                    <img tabindex="9" class="scroll-pic scroll-pic2 p-2 bd-highlight" src="images/hs_bball.jpg" alt="Playing high school basketball">
+                    <img tabindex="10" class="scroll-pic scroll-pic3 p-2 bd-highlight" src="images/spring_break.png" alt="Some great friends of mine">
+                    <img tabindex="11" class="scroll-pic scroll-pic4 p-2 bd-highlight" src="images/seattle_neil.png" alt="Visitng my brother in Seattle">
+                    <img tabindex="12" class="scroll-pic scroll-pic5 p-2 bd-highlight" src="images/senior_hs_bball.png" alt="Playing my last high school basketball game">
+                    <img tabindex="13" class="scroll-pic scroll-pic6 p-2 bd-highlight" src="images/friends.png" alt="Tailgating on gamedays">
+                    <img tabindex="14" class="scroll-pic scroll-pic7 p-2 bd-highlight" src="images/ktp_pic.png" alt="My pledge class in fall 2021">
+                    <img tabindex="15" class="scroll-pic scroll-pic8 p-2 bd-highlight" src="images/sb_friends.png" alt="Going on spring break with my frineds">
+                    <img tabindex="16" class="scroll-pic scroll-pic9 p-2 bd-highlight" src="images/fam_biking.JPG" alt="Going biking with my fam">
+                </div>
+
+            </div>
+
         </main>
 
         <footer>
-            <nav class="socials_grid">
-                <!-- <a href="https://www.instagram.com/yashpotdukhe/" class="icon fa-instagram"></a> -->
-                <a href="https://www.instagram.com/yashpotdukhe/" aria-label="instagram icon" class="icon fa-brands fa-instagram fa-ex" ></a>
-                <a href="https://www.linkedin.com/in/yash-potdukhe/" aria-label="linkedin icon" class="icon fa-brands fa-linkedin-in"></a>
-                <a href="https://github.com/YashPotdukhe" aria-label="github icon" class="icon fa-brands fa-github"></a>
-            </nav>
-            <p>Go Blue!<br>
+            <p class="trademark">Go Blue!<br>
               &copy; Yash Potdukhe - Class of 2025</p>
         </footer>
-        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>
 </html>

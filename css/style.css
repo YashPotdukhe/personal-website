@@ -4,82 +4,51 @@ html {
 
 /* set the background for the body of the text */
 body {
-    /* background-color: rgb(247, 202, 201); */
-    background-color: beige;
-    /* background-image: url("../images/concrete_seamless.png"); */
+    /* background-color: beige; */
+    background-color: #100c08;
 }
 
 
-/* set the size of logo and make the pic circular */
-#logo {
-    width: 8%;
-    border-radius: 50%;
-    padding: 2px;
+main {
+    margin: 15px 8px;
+    /* margin-bottom: 75px; */
+    min-width: 259px;
+}
+
+p {
+    display: block;
+}
+
+.trademark {
+    margin-right: 8px;
+}
+
+figure {
+    display: block;
+    margin-bottom: 0px;
 }
 
 /* make the header into a grid, and make it flow into one column */
-
-header {
-    display: grid;
-    grid-auto-flow: column; 
-}
-
-/* set the nav bar to be an inline-grid itself */
-nav ul {
-    display: inline-grid;
-    grid-template-columns: auto auto auto auto;
-    justify-content: space-evenly;
-    gap: 22px;
-}
 
 /* affects the text of the diff nav options */
 
 nav a {
     color: black;
-    /* font-weight: bold; */
+    color: rgb(255, 219, 112);
+    font-weight: bold;
     text-decoration: none; 
 }
 
 /* if mouse hover on a text in nav, then it underlines */
 
-nav a:hover {
+a:hover {
     font-weight: bold;
-    /* color: lightseagreen; */
-    color: #36454F;
+    color: rgb(255, 219, 112);
 }
 
-/* sets the button of the nav items to have oval around it */
-
-.nav_item {
-    font-size: 20px;;
-    display: block;
-    padding: 5px;
-    /* border: 2px solid black; */
-    border-radius: 50px;
-}
 
 /* put nav buttons to the right */
 
-nav{
-    text-align: right;
-  }
-
-/* put h1 in middle */
-
-/* .main {
-    border: 1px solid black;
-} */
-
-main h1 {
-    font-family: Helvetica, sans-serif;
-    font-size: 50px;
-    text-align: center;
-}
-
-main p {
-    text-align: center;
-    font-size: 18px;
-}
 
 /* implement skip to main content */
 
@@ -114,51 +83,17 @@ main p {
 
 footer {
     text-align: left;
+
 }
 
-.socials_grid {
-    display: inline-grid;
-    grid-template-columns: auto auto auto;
-    align-self: left;
-}
-
-.card {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: all 0.8s ease;
-}
-
-.front {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    background-color: black;
-}
-
-.back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden; 
-    background-color: white;   
-    transform: rotateY(180deg);
-}
-
-.flipCard {
-    transform: rotateY(180deg);
-}
 
 
 footer p {
     text-align: right;
-    color: #36454F;
+    color: rgb(255, 219, 112);
 }
 
 .icon {
-    padding: 20px;
     font-size: 30px;
     width: 30px;
     text-align: center;
@@ -170,27 +105,314 @@ footer p {
     opacity: 0.7;
 }
 
-.pic_gallery {
-    /* border: 3px solid black; */
-    /* width: 50%; */
-    margin: 10px auto;
-    /* background-color: blanchedalmond; */
+/* css relating to new idea of UI */
 
+.sidebar {
+    background: rgb(30, 30, 31);
+    border: 1px solid rgb(56, 56, 56);
+    border-radius: 20px;
+    padding: 12px;
+    box-shadow: -4px 8px 24px black;
+    z-index: 1;
+    align-content: center;
+}
 
-    display: grid;
-    grid-template-columns: 25% 25% 25%;
+.side-info {
+    position: relative;
+    display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 30px;
 }
 
-.pic_gallery img{
-    border-radius: 25%;
-    padding: 20px;
-    /* border: 10px solid firebrick; */
+.profile-pic {
+    /* background: linear-gradient(to bottom right, rgb(63, 63, 64) 3%, rgb(48, 48, 48) 97% ); */
+    border-radius: 30px;
+    width: 43%;
+    align-self: center;
 }
 
-.about_gallery {
-    display: flexbox;
-    flex-wrap: wrap;
-    flex-direction: row;
+.profile-info .name {
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: -0.25px;
+}
+
+.profile-info .position {
+    /* border: 1px solid rgb(56, 56, 56);
+    border-radius: 20px;
+    padding: 12px;
+    box-shadow: -4px 8px 24px black;
+    z-index: 1;
+    color: white; */
+
+    color: white;
+    background: rgb(43, 43, 44);
+    font-size: 20px;
+    font-weight: 300;
+    width: max-content;
+    padding: 3px 12px;
+    border-radius: 8px;
+}
+
+.profile-info > row {
+    max-width: fit-content;
+}
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(43, 43, 44);
+    backdrop-filter: blur(10px);
+    border: rgb(56, 56, 56);
+    border-radius: 12px 12px 0 0;
+    z-index: 5;
+}
+
+.nav_links {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    justify-content: center;
+    padding-top: 20px;
+    padding-right: 5px;
+    /* padding-bottom: px; */
+}
+
+.nav_item {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social {
+    max-width: fit-content;
+    justify-content: space-evenly;
+}
+
+.main-content {
+    background: rgb(30, 30, 31);
+    border: 1px solid rgb(56, 56, 56);
+    border-radius: 20px;
+    padding: 12px;
+    box-shadow: -4px 8px 24px black;
+    z-index: 1;
+    align-content: center;
+    margin-top: 12px;
+}
+
+.title-name {
+    color: white;
+    /* font-weight: bold; */
+    font-size: 28px;
+    /* text-decoration: underline; */
+}
+
+.nav-tabs {
+    justify-content: end;
+    border-bottom: 1px solid rgb(255, 219, 112);
+}
+
+.nav-link {
+    color: rgb(255, 219, 112);
+}
+
+.underline {
+    text-decoration: underline;
+    font-weight: bolder;
+    color: lightgrey;
+}
+
+.about-me-text {
+    font-family: 'Poppins', sans-serif;
+    color: lightgrey;
+}
+
+.about-pics {
+    color: white;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.about-pics a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.scroll-pic {
+    width: max-content;
+}
+
+.card {
+    background: rgb(30, 30, 31);
+    border: 1px solid rgb(56, 56, 56);
+    border-radius: 20px;
+    padding: 12px;
+    box-shadow: -4px 8px 24px black;
+    z-index: 1;
+}
+
+
+.card-img-top {
+    border-radius: 30px;
+}
+
+.card-body {
+    align-items: center
+}
+
+.card-title {
+   text-align: center;
+   color: white;
+}
+
+.card-text {
+    text-align: center;
+    color: white;
+}
+
+.skills {
+    background: rgb(30, 30, 31);
+    border: 1px solid rgb(56, 56, 56);
+    border-radius: 20px;
+    padding: 12px;
+    box-shadow: -4px 8px 24px black;
+    z-index: 1;
+}
+
+
+
+.skills-title, .skill-item {
+    color: white;
+
+}
+
+.skill-item {
+    margin-bottom: 5px;
+}
+
+
+.skills .skill-name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+
+.progress {
+    background-color: rgb(56, 56, 56);
+    height: 0.5rem;
+}
+
+.progress-bar {
+    background-color: rgb(255, 219, 112); 
+}
+
+.w-60 {
+    width: 60%!important;
+}
+
+.w-30 {
+    width: 30%!important;
+}
+
+.w-20 {
+    width: 20%!important;   
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.blog-grid {
+    display:grid;
+    justify-content: space-evenly
+}
+
+.card-btn {
+    color: rgb(255, 219, 112);
+    border-color: rgb(255, 219, 112);
+    text-decoration: underline;
+}
+
+.modal-btn:hover {
+    color: rgb(255, 219, 112);
+    border-color: rgb(255, 219, 112);
+}
+
+.close-btn {
+    color: white;
+}
+
+.jamaica-modal-prop {
+    background: rgb(30, 30, 31);
+    border: 1px solid rgb(56, 56, 56);
+    border-radius: 20px;
+    padding: 12px;
+    box-shadow: -4px 8px 24px black;
+    z-index: 1;
+    color: white;
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+    .scroll-pic {
+        width: 50%;
+    }
+    .about-pics {
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-around;
+        overflow: hidden;
+    }
+
+    .blog-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        overflow: scroll;
+        min-width: fit-content;
+        gap: 15px;
+    }
+
+    .profile-info {
+        width: fit-content;
+        align-items: center;
+    }
+
+    .profile-info .name {
+        font-size: 40px;
+        font-weight: 500;
+        letter-spacing: -0.25px;
+        margin: auto;
+        padding-bottom: 8px;
+    }
+
+    .profile-info .position {
+        font-size: 35px;
+        margin: auto;
+    }
+
+    .profile-info .socials-row {
+        padding-top: 15px;
+        padding-left: 25px;
+        margin: auto;
+    }
+
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .blog-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
 }

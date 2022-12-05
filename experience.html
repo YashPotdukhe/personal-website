@@ -3,40 +3,120 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="icon" href="images/Yash_website_pic.jpg">
-        <link rel="stylesheet" href="css/style.css">
         <script src="https://kit.fontawesome.com/376c1020b5.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
         <title>Experience</title>
     </head>
     <body>
         <header>
-            <div class="skip"><a href="about.html">Skip to Main Content</a></div>
-            <img src="images/Yash_website_pic.jpg" alt="Yash Potdukhe Portrait" id="logo">
+            <div class="skip"><a href="#main-experience">Skip to Main Content</a></div>
+            <!-- <img src="images/Yash_website_pic.jpg" alt="Yash Potdukhe Portrait" id="logo"> -->
             <!-- Nav is a sematic tag page that aids accessibility -->
-            <nav class="nav_links">
-                <ul>
-                    <li class="nav_item"><a href = "index.html" >Home</a></li>
-                    <li class="nav_item"><a href = "about.html">About Me</a></li>
-                    <li class="nav_item"><a href = "experience.html">Experience</a></li>
-                    <!-- <li class="nav_item"><a href = "https://www.youtube.com/watch?v=eBGIQ7ZuuiU">Coolest Video EVER</a></li> -->
+            <!-- <nav>
+                <ul class="nav_links">
+                    <li class="nav_item"><a href = "about.html" >About</a></li>
+                    <li class="nav_item"><a href = "experience.html">Portfolio</a></li>
+                    <li class="nav_item"><a href = "blog.html">Blog</a></li>
                 </ul>
-            </nav>
+            </nav> -->
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="underline nav-link" href="experience.html">Experience</a>
+                </li>
+            </ul>
         </header>
         <main>
-            <h1>Experience!</h1>
+            <div class="sidebar">
+
+                <div class="container container-fluid">
+
+                    <div class="container-fluid side-info">
+                        <img class="profile-pic" src="images/Yash_website_pic.jpg" alt="Yash Potdukhe" width="80">
+
+                        <div class="profile-info container-fluid">
+                            <div class="row">
+                                <h1 class="name">Yash Potdukhe</h1>
+                            </div>
+                            <div class="row">
+                                <p class="position">Software Engineer</p>
+                            </div>
+                            
+                            <div class="row socials-row">
+                                <nav class="social col-6 col-sm-4">
+                                    <a href="https://www.instagram.com/yashpotdukhe/" aria-label="instagram icon" class="icon fa-brands fa-instagram fa-ex"></a>
+                                </nav>
+                                <nav class="social col-6 col-sm-4">
+                                    <a href="https://www.linkedin.com/in/yash-potdukhe/" aria-label="linkedin icon" class="icon fa-brands fa-linkedin-in"></a>
+                                </nav>
+                                <nav class="social col-6 col-sm-4">
+                                    <a href="https://github.com/YashPotdukhe" aria-label="github icon" class="icon fa-brands fa-github"></a>
+                                </nav>
+                            </div>
+
+                        </div>
+                    
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="main-content" id="main-experience">
+                <header class="title">
+                    <h2 class="title-name">Resume</h2>
+                </header>
+
+                <div class="skills">
+                    <h3 class="skills-title">My skills</h3>
+                    <ul class="skills-list">
+                        <li class="skill-item">
+                                <h6 >C++ | 60%</h6>
+                                <div class="progress">
+                                    <div class="progress-bar w-60" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                        </li>
+                        <li class="skill-item">
+                            <h6 >Python | 30%</h6>
+                            <div class="progress">
+                                <div class="progress-bar w-30" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </li>
+
+                        <li class="skill-item">
+                            <h6 >HTML/CSS | 75%</h6>
+                            <div class="progress">
+                                <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </li>
+
+                        <li class="skill-item">
+                            <h6 >JavaScript | 20%</h6>
+                            <div class="progress">
+                                <div class="progress-bar w-20" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
         </main>
         <footer>
-            
-            <nav class="socials_grid" aria-label="social media icon links">
-                <!-- <a href="https://www.instagram.com/yashpotdukhe/" class="icon fa-instagram"></a> -->
-                <a href="https://www.instagram.com/yashpotdukhe/" aria-label="instagram icon" class="icon fa-brands fa-instagram fa-ex" ></a>
-                <a href="https://www.linkedin.com/in/yash-potdukhe/" aria-label="linkedin icon" class="icon fa-brands fa-linkedin-in"></a>
-                <a href="https://github.com/YashPotdukhe" aria-label="github icon" class="icon fa-brands fa-github"></a>
-            </nav>
-            <p>Go Blue!<br>
+            <p class="trademark">Go Blue!<br>
               &copy; Yash Potdukhe - Class of 2025</p>
         </footer>
-
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>
 </html>

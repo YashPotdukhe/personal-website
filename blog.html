@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="images/Yash_website_pic.jpg">
+        <script src="https://kit.fontawesome.com/376c1020b5.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Home</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="skip"><a href="#main-blog">Skip to Main Content</a></div>
+            <!-- <img src="images/Yash_website_pic.jpg" alt="Yash Potdukhe Portrait" id="logo"> -->
+            <!-- Nav is a sematic tag page that aids accessibility -->
+            <!-- <nav>
+                <ul class="nav_links">
+                    <li class="nav_item"><a href = "about.html" >About</a></li>
+                    <li class="nav_item"><a href = "experience.html">Portfolio</a></li>
+                    <li class="nav_item"><a href = "blog.html">Blog</a></li>
+                </ul>
+            </nav> -->
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="underline nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="experience.html">Experience</a>
+                </li>
+            </ul>
+        </header>
+        <main class="main">
+            <div class="sidebar">
+
+                <div class="container container-fluid">
+
+                    <div class="container-fluid side-info">
+                        <img class="profile-pic" src="images/Yash_website_pic.jpg" alt="Yash Potdukhe" width="80">
+
+                        <div class="profile-info container-fluid">
+                            <div class="row">
+                                <h1 class="name">Yash Potdukhe</h1>
+                            </div>
+                            <div class="row">
+                                <p class="position">Software Engineer</p>
+                            </div>
+                            
+                            <div class="row socials-row">
+                                <nav class="social col-6 col-sm-4">
+                                    <a href="https://www.instagram.com/yashpotdukhe/" aria-label="instagram icon" class="icon fa-brands fa-instagram fa-ex"></a>
+                                </nav>
+                                <nav class="social col-6 col-sm-4">
+                                    <a href="https://www.linkedin.com/in/yash-potdukhe/" aria-label="linkedin icon" class="icon fa-brands fa-linkedin-in"></a>
+                                </nav>
+                                <nav class="social col-6 col-sm-4">
+                                    <a href="https://github.com/YashPotdukhe" aria-label="github icon" class="icon fa-brands fa-github"></a>
+                                </nav>
+                            </div>
+
+                        </div>
+                    
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="main-content" id="main-blog">
+                <header class="title">
+                    <h2 class="title-name">Blog</h2>
+                </header>
+                <div class="blog-blurb">
+                    <p class="about-me-text">
+                        These are some experiences throughout my life!
+                    </p>
+                </div>
+
+                <div class="blog-grid container">
+
+                    <div class="card blog-1" style="width: 18rem;">
+                        <img class="card-img-top" src="images/jamaica_trip.jpg" alt="Jamaica View">
+                        <div class="card-body">
+                            <h5 class="card-title">Jamaica Trip</h5>
+                            <p class="card-text">December 2019</p>
+
+                            <div class="text-center">
+                                <button type="button" class="btn btn-outline-secondary card-btn" data-toggle="modal" data-target="#jamaica-modal">Read More</button>   
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="jamaica-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content jamaica-modal-prop">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Jamaica Trip</h5>
+                              <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body about-me-text">
+                                Jamaica is a stunning island destination. It features sandy beaches, turquoise waters, lush jungle landscapes, and fun activities like hiking, zip-lining, and horseback riding. Jamaica also boasts a rich culture.
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary modal-btn" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="card blog-2" style="width: 18rem;">
+                        <img class="card-img-top" src="images/hiking_pic.jpg" alt="Hiking Picture">
+                        <div class="card-body">
+                            <h5 class="card-title">Seattle</h5>
+                            <p class="card-text">July 2021</p>
+
+                            <div class="text-center">
+                                <button type="button" class="btn btn-outline-secondary card-btn" data-toggle="modal" data-target="#seattle-modal">Read More</button>   
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="seattle-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content jamaica-modal-prop">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Seattle Trip</h5>
+                              <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body about-me-text">
+                                I love Seattle and hiking!
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary modal-btn" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="card blog-3" style="width: 18rem;">
+                        <img class="card-img-top" src="images/Cancun.jpg" alt="Cancún Pic">
+                        <div class="card-body">
+                            <h5 class="card-title">Cancún</h5>
+                            <p class="card-text">December 2017</p>
+
+                            <div class="text-center">
+                                <button type="button" class="btn btn-outline-secondary card-btn" data-toggle="modal" data-target="#cancun-modal">Read More</button>   
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="cancun-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content jamaica-modal-prop">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Cancún Trip</h5>
+                              <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body about-me-text">
+                                I love Cancún!
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary modal-btn" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    <div class="card blog-4" style="width: 18rem;">
+                        <img class="card-img-top" src="images/punta-cana.jpg" alt="Punta Cana Pic">
+                        <div class="card-body">
+                            <h5 class="card-title">Punta Cana</h5>
+                            <p class="card-text">December 2016</p>
+
+                            <div class="text-center">
+                                <button type="button" class="btn btn-outline-secondary card-btn" data-toggle="modal" data-target="#punta-modal">Read More</button>   
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="punta-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content jamaica-modal-prop">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Punta Cana Trip</h5>
+                              <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body about-me-text">
+                                Great times with great people!
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary modal-btn" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    <div class="card blog-5" style="width: 18rem;">
+                        <img class="card-img-top" src="images/india.jpg" alt="India Pic">
+                        <div class="card-body">
+                            <h5 class="card-title">India</h5>
+                            <p class="card-text">August 2022</p>
+
+                            <div class="text-center">
+                                <button type="button" class="btn btn-outline-secondary card-btn" data-toggle="modal" data-target="#india-modal">Read More</button>   
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="india-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content jamaica-modal-prop">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">India Trip</h5>
+                              <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body about-me-text">
+                                Seeing cousins and family after 7 years!
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary modal-btn" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    <div class="card blog-6" style="width: 18rem;">
+                        <img class="card-img-top" src="images/cozumel.jpg" alt="Cozumel Pic">
+                        <div class="card-body">
+                            <h5 class="card-title">Cozumel</h5>
+                            <p class="card-text">December 2015.</p>
+
+                            <div class="text-center">
+                                <button type="button" class="btn btn-outline-secondary card-btn" data-toggle="modal" data-target="#cozumel-modal">Read More</button>   
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="cozumel-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content jamaica-modal-prop">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Cozumel Trip</h5>
+                              <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body about-me-text">
+                                A stop at Cozumel during a cruise.
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary modal-btn" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    <div class="card blog-7" style="width: 18rem;">
+                        <img class="card-img-top" src="images/Paris.jpg" alt="Paris Pic">
+                        <div class="card-body">
+                            <h5 class="card-title">Paris</h5>
+                            <p class="card-text">August 2022</p>
+
+                            <div class="text-center">
+                                <button type="button" class="btn btn-outline-secondary card-btn" data-toggle="modal" data-target="#paris-modal">Read More</button>   
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="paris-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content jamaica-modal-prop">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Paris Trip</h5>
+                              <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body about-me-text">
+                                A stop at Paris!
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary modal-btn" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    <div class="card blog-8" style="width: 18rem;">
+                        <img class="card-img-top" src="images/Miami.jpg" alt="Miami Pic">
+                        <div class="card-body">
+                            <h5 class="card-title">Miami</h5>
+                            <p class="card-text">December 2013</p>
+
+                            <div class="text-center">
+                                <button type="button" class="btn btn-outline-secondary card-btn" data-toggle="modal" data-target="#miami-modal">Read More</button>   
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="miami-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content jamaica-modal-prop">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Miami Trip</h5>
+                              <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body about-me-text">
+                                Spending Christmas in South Beach!
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary modal-btn" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    <div class="card blog-9" style="width: 18rem;">
+                        <img class="card-img-top" src="images/Santa-Monica.jpg" alt="Santa Monica Pic">
+                        <div class="card-body">
+                            <h5 class="card-title">Santa Monica</h5>
+                            <p class="card-text">March 2022</p>
+
+                            <div class="text-center">
+                                <button type="button" class="btn btn-outline-secondary card-btn" data-toggle="modal" data-target="#santa-monica-modal">Read More</button>   
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="santa-monica-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content jamaica-modal-prop">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Santa Monica Trip</h5>
+                              <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body about-me-text">
+                                Spent spring break in Santa Monica!
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary modal-btn" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+            </div>
+
+        </main>  
+
+        <footer>
+            <p class="trademark">Go Blue!<br>
+              &copy; Yash Potdukhe - Class of 2025</p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>
